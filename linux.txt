@@ -1,0 +1,77 @@
+/ 根目录
+~ home
+cd 切换路径
+ls 查看所有文件 
+ls -l 查看文件详细列表
+ls -a 查看所有包括隐藏文件
+ll	查看所有文件详细列表
+pwd 查看当前所在路径
+
+home目录
+普通用户 /home/ksit /home/tom 
+root用户 /root/
+
+d:文件夹
+-：文件
+l:软连接(快捷方式)
+r w x -
+
+touch a.txt 创建文件
+mkdir photo 创建文件夹
+
+chgrp root(组) a.txt(文件) 更改文件所属用户组
+使用 sudo命令提升当前用户的权限
+eg: sudo chgrp root a.txt 
+递归加上 -R 属性
+
+查看文件内容 cat a.txt
+
+adduser tom 创建新用户
+userdel tom 删除用户
+
+rm tom 删除对应文件
+rm -rf tom 删除对应文件夹
+rm -rf /
+
+chown tom a.txt 改变文件的所属者
+chown -r tom photo 递归更改文件所有者
+
+chmod 777 a.txt
+chmod u+r a.txt 更改文件权限
+
+reboot 重启
+poweroff/init0 关机
+
+mkdir -m 777 增加权限
+mkdir -p 一次性创建多层目录
+
+cp a.txt b.txt 拷贝copy 
+mv a.txt imgs 移动 剪切
+mv a.txt b.txt 重命名
+
+vim 编辑器之神
+浏览模式
+编辑模式
+vim a.txt-->i-->编辑-->esc-->:wq 保存并退出-->:q! 强制退出-->:q退出
+
+scp linux.txt root@vm1:~ 将linux文件上传到 root的家目录
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'identified by 'rootroot';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
